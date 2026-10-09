@@ -1,0 +1,302 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ============ HEADER ============ */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 65px;        
+  background-color: #fff;
+}
+
+.logo {
+  font-family: Georgia, "Times New Roman", serif; 
+  font-size: 36px;            
+  font-weight: 400;          
+  letter-spacing: 7px;    
+  color: #222;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-item {
+  position: relative;
+  font-size: 15px;          
+  font-weight: 500;          
+  letter-spacing: 3px;        
+  color: #222;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #333;
+  padding: 15px 20px;
+  list-style: none;
+  min-width: 180px;
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 6px 0;
+}
+
+.dropdown a {
+  color: #fff;
+  font-weight: normal;
+}
+
+
+.dropdown.show {
+  display: block;
+}
+
+
+/* ============ HERO ============ */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 640px;
+  overflow: hidden;
+
+
+  background-color: #80aede;
+  background-image:
+    radial-gradient(circle at 5% 30%,  #f6dfe4 0 38px, rgba(246,223,228,0) 46px),
+    radial-gradient(circle at 9% 26%,  #f6dfe4 0 50px, rgba(246,223,228,0) 58px),
+    radial-gradient(circle at 14% 31%, #f6dfe4 0 40px, rgba(246,223,228,0) 48px),
+    radial-gradient(circle at 88% 28%, #f6dfe4 0 38px, rgba(246,223,228,0) 46px),
+    radial-gradient(circle at 92% 24%, #f6dfe4 0 52px, rgba(246,223,228,0) 60px),
+    radial-gradient(circle at 97% 30%, #f6dfe4 0 40px, rgba(246,223,228,0) 48px),
+    /* degradado del cielo */
+    linear-gradient(180deg, #7fabdc 0%, #9dc0e6 55%, #e4ebf6 100%);
+}
+
+.hero img {
+  position: absolute;
+  left: 50%;
+  bottom: -10%;                 
+  transform: translateX(-50%);
+  height: 100%;                 
+  width: auto;
+  z-index: 2;
+}
+/* ============ PROXIMOS ESTRENOS ============ */
+.estrenos-section {
+  padding:0;
+}
+
+.estrenos {
+  display: flex;
+  flex-direction: column; /* apila los items uno debajo del otro */
+  gap: 10px;
+  width: 100%;
+  padding: 45px;
+}
+
+.estrenos-item {
+  position: relative;   
+  overflow: hidden;     
+  width: 100%;
+  height: 300px;
+  background-color: #111;
+}
+
+/* que el enlace ocupe todo el recuadro */
+.estrenos-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*la imagen de fondo llena todo el recuadro sin deformarse */
+.estrenos-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+}
+
+/* el logo va encima, con su tamaño propio */
+.estrenos-item .logo-pelicula {
+  position: absolute;
+  z-index: 2;           /*asegura que quede al frente */
+  left: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 520px;
+  height: auto;
+  object-fit: contain;
+}
+/* ============ GRID DE PELICULAS ============ */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 16px 40px;
+}
+
+.grid-item {
+  height: 300px;
+  overflow: hidden;
+  background-color: #111; /* fondo mientras carga */
+}
+
+.grid-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.grid-item.small {
+  height: 220px;
+}
+
+.careers-text {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-color: #1a1a1a; 
+  background-image:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.1) 100%),
+    url("https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/fce44eb8-f14e-48a2-8832-9bb50e318690/car.jpg?format=1500w");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 40px;
+  height: auto;
+}
+.careers-text h2 {
+  margin-bottom: 15px;
+}
+
+.careers-text a {
+  display: inline;
+  width: auto;
+  height: auto;
+  text-decoration: underline;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  background-color: #fff;
+}
+
+/* franja gris de arriba */
+.footer-top {
+  display: flex;
+  align-items: center;       
+  background-color: #f5f5f3;
+  padding: 60px 90px;
+}
+
+.footer-social {
+  display: grid;
+  grid-template-columns: repeat(3, 56px);
+  gap: 18px 4px;
+  width: 400px;        
+  flex-shrink: 0;
+}
+
+.footer-social a {
+  font-size: 34px;
+  color: #000;
+}
+
+/* columnas de enlaces */
+.footer-columns {
+  display: flex;
+  gap: 45px;
+}
+
+.footer-col h3 {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 5px;        
+  color: #000;
+  margin-bottom: 18px;
+}
+
+.footer-col a {
+  display: block;
+  font-size: 17px;
+  line-height: 23px;          
+  color: #000;
+}
+
+.footer-col a:hover,
+.privacy-links a:hover {
+  text-decoration: underline;
+}
+
+/* franja blanca de abajo */
+.footer-bottom {
+  text-align: center;
+  padding: 30px 20px 50px;
+  color: #000;
+}
+
+.privacy-title {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.privacy-links {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.copyright {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .grid-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .careers-text {
+    grid-column: span 1;
+  }
+
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav-list {
+    gap: 15px;
+    font-size: 12px;
+  }
+}

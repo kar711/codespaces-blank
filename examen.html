@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixar Examen 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ======== HEADER ========= -->
+  <header class="header">
+    <div class="logo">PIXAR</div>
+
+    <nav class="nav">
+      <ul class="nav-list">
+  <li class="nav-item" id="filmsItem">
+  <span>FILMS</span>
+  <ul class="dropdown" id="filmsDropdown">
+    <li><a href="https://www.pixar.com/feature-films" target="_blank">Feature Films</a></li>
+    <li><a href="https://www.pixar.com/short-films" target="_blank">Short Films</a></li>
+    <li><a href="https://www.pixar.com/series" target="_blank">Series</a></li>
+    <li><a href="https://www.pixar.com/sparkshorts" target="_blank">SparkShorts</a></li>
+    <li><a href="https://www.pixar.com/docs" target="_blank">Documentaries</a></li>
+  </ul>
+</li>
+
+<li class="nav-item" id="technologyItem">
+  <span>TECHNOLOGY</span>
+  <ul class="dropdown" id="technologyDropdown">
+    <li><a href="https://www.pixar.com/technology-at-pixar" target="_blank">Technology at Pixar</a></li>
+    <li><a href="https://www.pixar.com/renderman" target="_blank">RenderMan</a></li>
+    <li><a href="https://www.pixar.com/openusd" target="_blank">OpenUSD</a></li>
+    <li><a href="https://www.pixar.com/software-rd" target="_blank">Software R&amp;D</a></li>
+    <li><a href="https://www.pixar.com/technology-libraries" target="_blank">Technology Libraries</a></li>
+  </ul>
+</li>
+
+<li class="nav-item" id="careersItem">
+  <span>CAREERS</span>
+  <ul class="dropdown" id="careersDropdown">
+    <li><a href="https://www.pixar.com/careers" target="_blank">Careers</a></li>
+    <li><a href="https://www.pixar.com/internships" target="_blank">Internships</a></li>
+    <li><a href="https://www.pixar.com/life-at-pixar" target="_blank">Life At Pixar</a></li>
+  </ul>
+</li>
+
+<li class="nav-item" id="moreItem">
+  <span>MORE</span>
+  <ul class="dropdown" id="moreDropdown">
+    <li><a href="https://www.pixar.com/leaders" target="_blank">Leaders</a></li>
+    <li><a href="https://www.pixar.com/our-story" target="_blank">Our Story</a></li>
+    <li><a href="https://www.pixar.com/events" target="_blank">Events</a></li>
+    <li><a href="https://www.pixar.com/pixar-in-a-box" target="_blank">Pixar In A Box</a></li>
+    <li><a href="https://www.pixar.com/company-faqs" target="_blank">FAQ's</a></li>
+  </ul>
+</li>
+    </ul>
+    </nav>
+  </header>
+
+  <!-- main envuelve todo el contenido principal de la pagina -->
+  <main>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+
+    <img src="https://i.ibb.co/s9b2pW5q/toystore5-removebg-preview.png?format=1500w" alt="Toy Story" class="hero-img">
+  </section>
+
+  <!-- =====================  PROXIMOS ESTRENOS ===================== -->
+
+  <div class="estrenos" id="estrenos">
+
+  <article class="estrenos-item">
+    <a href="https://www.pixar.com/gatto">
+      <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/2df12a84-c96b-4ea6-baa2-a811172a3656/gatto_bg.jpg?format=1500w" alt="Gatto">
+      <img class="logo-pelicula" src="images/logo2.webp" alt="Logo de Gatto">
+    </a>
+  </article>
+  <article class="estrenos-item">
+    <a href="https://www.pixar.com/hoppers">
+      <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/f3cf4f2f-30c0-464f-9ce8-4648f1bd7efd/hop_v2.jpg?format=1500w" alt="Hoppers">
+      <img class="logo-pelicula" src="images/logo3.webp" alt="Logo de HOPPERS">
+    </a>
+  </article>
+</div>
+
+  <!-- ===================== GRID DE PELICULAS ===================== -->
+  <section class="grid-section">
+
+    <article class="grid-item">
+      <a href="https://www.pixar.com/ghost-market">
+        <img src="images/cap1.png" alt="Ghost Market">
+      </a>
+    </article>
+    <article class="grid-item">
+      <a href="https://www.pixar.com/incredibles-3">
+        <img src="images/cap2.png" alt="Incredibles 3">
+      </a>
+    </article>
+    <article class="grid-item">
+      <a href="https://www.pixar.com/coco-2">
+        <img src="images/cap3.png" alt="Coco 2">
+      </a>
+    </article>
+    <!-- esto no es una pelicula, es info de la empresa, por eso uso 'aside' -->
+    <aside class="grid-item small">
+      <a href="https://www.pixar.com/careers">
+        <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/7b0a27d2-53fb-4cd5-86f4-656c87726432/20190731LucaArtReview99905.JPG-0.jpg?format=1500w" alt="Careers 1">
+      </a>
+    </aside>
+    <aside class="grid-item careers-text">
+      <h2>Careers at Pixar</h2>
+      <p>At Pixar, we are proud of our tradition of creative and technical excellence and are always looking for talented people to enrich our work and our community. <a href="https://www.pixar.com/careers">Learn more</a></p>
+    </aside>
+
+    <aside class="grid-item small">
+      <a href="https://www.pixar.com/careers">
+        <img src="https://images.squarespace-cdn.com/content/v1/60241cb68df65b530cd84d95/6dbf1df6-bcc9-49bc-b3d3-c47583ea39ee/20230111Do000nShank06.JPG-0.jpg?format=1500w" alt="Careers 2">
+      </a>
+    </aside>
+
+    <!-- fila 4: fila nueva -->
+    <article class="grid-item">
+      <a href="https://www.pixar.com/loving-dory">
+        <img src="images/cap4.png" alt="Loving Dory">
+      </a>
+    </article>
+    <article class="grid-item">
+      <a href="https://www.pixar.com/win-or-lose">
+        <img src="images/cap5.png" alt="Win or Lose">
+      </a>
+    </article>
+    <article class="grid-item">
+      <a href="https://www.pixar.com/dream-productions">
+        <img src="images/cap6.png" alt="Dream Productions">
+      </a>
+    </article>
+
+  </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <!-- franja gris de arriba -->
+  <div class="footer-top">
+    <div class="footer-social">
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-columns">
+      <div class="footer-col">
+        <h3>FILMS</h3>
+        <a href="#">Features</a>
+        <a href="#">Shorts</a>
+        <a href="#">Series</a>
+        <a href="#">SparkShorts</a>
+        <a href="#">Documentaries</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>TECH</h3>
+        <a href="#">Tech at Pixar</a>
+        <a href="#">RenderMan</a>
+        <a href="#">OpenUSD</a>
+        <a href="#">Software R&amp;D</a>
+        <a href="#">Libraries</a>
+      </div>
+
+      <div class="footer-col">s
+        <h3>CAREERS</h3>
+        <a href="#">Careers At Pixar</a>
+        <a href="#">Internships</a>
+        <a href="#">Life At Pixar</a>
+      </div>
+
+      <div class="footer-col">
+        <h3>MORE</h3>
+        <a href="#">Leaders</a>
+        <a href="#">Our Story</a>
+        <a href="#">Events</a>
+        <a href="#">Pixar In A Box</a>
+        <a href="#">FAQ's</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="privacy-title">Your Privacy Choices</p>
+    <p class="privacy-links">
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Your US State Privacy Rights</a> |
+      <a href="#">Children's Online Privacy Policy</a> |
+      <a href="#">Interest Based Ads</a> |
+    </p>
+    <p class="copyright">© 1986-2026 Disney-Pixar</p>
+  </div>
+</footer>
+
+<script>
+
+// ============ DROPDOWN============
+const filmsItem = document.getElementById("filmsItem");
+const filmsDropdown = document.getElementById("filmsDropdown");
+
+function toggleFilms() {
+  filmsDropdown.classList.toggle("show");
+}
+
+filmsItem.addEventListener("click", toggleFilms);
+
+const technologyItem = document.getElementById("technologyItem");
+const technologyDropdown = document.getElementById("technologyDropdown");
+
+function toggleTechnology() {
+  technologyDropdown.classList.toggle("show");
+}
+
+technologyItem.addEventListener("click", toggleTechnology);
+
+const careersItem = document.getElementById("careersItem");
+const careersDropdown = document.getElementById("careersDropdown");
+
+function toggleCareers() {
+  careersDropdown.classList.toggle("show");
+}
+
+careersItem.addEventListener("click", toggleCareers);
+
+const moreItem = document.getElementById("moreItem");
+const moreDropdown = document.getElementById("moreDropdown");
+
+function toggleMore() {
+  moreDropdown.classList.toggle("show");
+}
+
+moreItem.addEventListener("click", toggleMore);
+
+
+// ============ CERRAR DROPDOWNS SI CLICKEAN AFUERA ============
+document.addEventListener("click", function (event) {
+  if (!filmsItem.contains(event.target)) {
+    filmsDropdown.classList.remove("show");
+  }
+  if (!technologyItem.contains(event.target)) {
+    technologyDropdown.classList.remove("show");
+  }
+  if (!careersItem.contains(event.target)) {
+    careersDropdown.classList.remove("show");
+  }
+  if (!moreItem.contains(event.target)) {
+    moreDropdown.classList.remove("show");
+  }
+});
+  </script>
+</body>
+</html>
